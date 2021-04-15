@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Личная страница Владислава Мирошникова</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{{ url_for('static', filename='/assets/img/favicon-mini.png') }}" rel="icon">
+  <link href="{{ url_for('static', filename='/assets/img/favicon.png') }}" rel="favicon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{{ url_for('static', filename='/assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='/assets/vendor/icofont/icofont.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='/assets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='/assets/vendor/venobox/venobox.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='/assets/vendor/owl.carousel/assets/owl.carousel.min.css') }}"
+    rel="stylesheet">
+  <link href="{{ url_for('static', filename='/assets/vendor/aos/aos.css') }}" rel="stylesheet">
+
+  <link href="{{ url_for('static', filename='/assets/css/style.css') }}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex flex-column justify-content-center">
+
+    <nav class="nav-menu">
+      <ul>
+        <li class="active"><a href="#hero"><i class="bx bx-home"></i> <span>Home</span></a></li>
+        <li><a href="#about"><i class="bx bx-user"></i> <span>About</span></a></li>
+        <li><a href="#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+        <li><a href="#portfolio"><i class="bx bx-book-content"></i> <span>Projects</span></a></li>
+        <li><a href="#contact"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+      </ul>
+    </nav><!-- .nav-menu -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+      <h1>Miroshnikov Vladislav</h1>
+      <p>I'm <span class="typed"
+          data-typed-items="a software engineering student at Saint Petersburg State University"></span></p>
+      <div class="social-links">
+        <a href="https://vk.com/vladmirosh" class="vk"><i class="bx bxl-vk"></i></a>
+        <a href="https://t.me/vladosiker" class="telegram"><i class="bx bxl-telegram"></i></a>
+        <a href="https://github.com/vladislav-miroshnikov" class="github"><i class="bx bxl-github"></i></a>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About</h2>
+
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4">
+            <img src="{{ url_for('static', filename='/assets/img/me-bg.jpg') }}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content">
+            <h3>Software engineering student</h3>
+            <p class="font-italic">
+              I study at St. Petersburg State University as a software engineer. I love programming and interesting
+              tasks.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="icofont-rounded-right"></i> <strong>Birthday:</strong> 30 November 2001</li>
+                  <li><i class="icofont-rounded-right"></i> <strong>Phone:</strong> +7 928 106 00 65</li>
+                  <li><i class="icofont-rounded-right"></i> <strong>City:</strong> Saint Petersburg, Russia</li>
+                  <li><i class="icofont-rounded-right"></i> <strong>Age:</strong> 19</li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+
+                  <li><i class="icofont-rounded-right"></i> <strong>Degree:</strong> Bachelor's degree in the future
+                  </li>
+                  <li><i class="icofont-rounded-right"></i> <strong>Email:</strong> vladislaw.miroshnikov@gmail.com</li>
+                  <li><i class="icofont-rounded-right"></i> <strong>Freelance:</strong> Available</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p>I love learning new programming languages, frameworks and technologies, solving new problems and coming up
+            with
+            algorithms for solving them.</p>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill">C# <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">C <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Ocaml <i class="val">65%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill">Kotlin <i class="val">30%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Python <i class="val">50%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">HTML/CSS <i class="val">50%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Interests ======= -->
+    <div class="interests container">
+
+      <div class="section-title">
+        <h2>Interests</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-3 col-md-4">
+          <div class="icon-box">
+            <i class="bx bxl-python" style="color: #e2fb06;"></i>
+            <h3>Programming</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+          <div class="icon-box">
+            <i class="icofont-mathematical" style="color: #ff0d0d;"></i>
+            <h3>Mathematical Sciences</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+          <div class="icon-box">
+            <i class="icofont-ui-movie" style="color: #5cffdc;"></i>
+            <h3>Movies and TV series</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+          <div class="icon-box">
+            <i class="icofont-ui-game" style="color: #e361ff;"></i>
+            <h3>Console games and gaming industry</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="bx bxl-spotify"></i>
+            <h3>Music</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="icofont-travelling" style="color: #a804e9;"></i>
+            <h3>Travelling</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="icofont-telegram" style="color: #fbff00;"></i>
+            <h3>Social networks</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="icofont-football" style="color: #2a2828;"></i>
+            <h3>Football</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="icofont-brainstorming" style="color: #8421d4;"></i>
+            <h3>Brainstorming</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="icofont-car" style="color: #f8a100;"></i>
+            <h3>Cars</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="icofont-brand-youtube" style="color: #ff0b02;"></i>
+            <h3>Youtube</h3>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="icofont-rugby" style="color: #ffffff;"></i>
+            <h3>Rugby</h3>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div><!-- End Interests -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+          <p>Here is a little information about me, about my education and what skills I have already acquired at the
+            university.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <h3 class="resume-title">Sumary</h3>
+            <div class="resume-item pb-0">
+              <h4>Miroshnikov Vladislav</h4>
+              <p><em>A student of St. Petersburg State University, originally from the city of Taganrog, I like the C #
+                  programming language
+                  and the .NET platform the most, in the future I want to become a full-fledged software engineer, solve
+                  big problems and
+                  conquer new horizons.</em></p>
+              <ul>
+                <li>Saint Petersburg, Russia</li>
+                <li>vladislaw.miroshnikov@gmail.com</li>
+              </ul>
+            </div>
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Secondary general education</h4>
+              <h5>2008 - 2019</h5>
+              <p><em>Gymnasium A.P. Chekhov, Taganrog city</em></p>
+              <p>Graduated from high school with two gold medals and a red certificate.</p>
+            </div>
+            <div class="resume-item">
+              <h4>Bachelor of software engineering</h4>
+              <h5>2019 - 2023</h5>
+              <p><em>Saint Petersburg State University, Faculty of Mathematics and Mechanics, Department of System
+                  Programming</em></p>
+              <p>This direction teaches how to create software products and allows to better learn about the process
+                of creating
+                software, starting from the stages of conceiving an idea and ending with a full-fledged release of the
+                finished product
+                to the market.</p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h3 class="resume-title">Acquired skills at university</h3>
+            <div class="resume-item">
+              <h4>First course</h4>
+              <ul>
+                <li>Basic cycle of mathematical disciplines, namely linear algebra, discrete mathematics, number theory,
+                  geometry,
+                  mathematical analysis</li>
+                <li>The basics of low-level and object-oriented programming, C, C # languages, working with WPF,
+                  WinForms, IoC containers,
+                  writing P2P chat on the UDP protocol and others. </li>
+                <li>Architecture of computer systems and algorithms and data structures</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Second course</h4>
+              <ul>
+                <li>Acquaintance with a variety of technologies: parallel programming, data analysis, functional
+                  programming, software
+                  project infrastructure.</li>
+                <li>Writing own mini-language C # in Ocaml (abstract syntax tree, parser, interpreter, REPL,
+                  mini-language
+                  optimizations).</li>
+                <li>Working with multithreading: fiber, client-server application based on WCF technology, MPI / OpenMP,
+                  parallel data
+                  structures.</li>
+                <li>Working with a mini operating system, writing a task scheduler, analogs of fork, exec, wait and
+                  exit, also working with
+                  virtual memory.</li>
+                <li>Web programming: HTML, CSS, Python, Flask, SQLAlchemy.</li>
+                <li>Product design course, creation and testing of hypotheses, primary research, market assessments,
+                  creation of interface
+                  references, design cocentives.</li>
+                <li>Mathematical logic, computational mathematics, probability theory and mathematical statistics,
+                  differential and
+                  difference equations.</li>
+                <li>Coursework on the Navitas Framewok project is an energy profiler for android applications.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Resume Section -->
+
+    <!-- ======= Projects Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Projects</h2>
+          <p>Below is information about my projects.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Product design</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{{ url_for('static', filename='/assets/img/portfolio/portfolio-1.jpeg') }}" class="img-fluid"
+                alt="">
+              <div class="portfolio-info">
+                <h4>Botanic</h4>
+                <p>Product design</p>
+                <div class="portfolio-links">
+                  <a href="{{ url_for('static', filename='/assets/img/portfolio/portfolio-1.jpeg') }}"
+                    data-gall="portfolioGallery" class="venobox" title="Product design 1"><i class="bx bx-plus"></i></a>
+                  <a href="{{url_for('botanic')}}" data-gall=" portfolioDetailsGallery" data-vbtype="iframe"
+                    class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{{ url_for('static', filename='/assets/img/portfolio/Csharp.png') }}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Mini C#</h4>
+                <p>App</p>
+                <div class="portfolio-links">
+                  <a href="{{ url_for('static', filename='/assets/img/portfolio/Csharp.png') }}"
+                    data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
+                  <a href="{{url_for('mini_csharp')}}" data-gall=" portfolioDetailsGallery" data-vbtype="iframe"
+                    class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{{ url_for('static', filename='/assets/img/portfolio/Client.png') }}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Client-server application</h4>
+                <p>App</p>
+                <div class="portfolio-links">
+                  <a href="{{ url_for('static', filename='/assets/img/portfolio/Client.png') }}"
+                    data-gall="portfolioGallery" class="venobox" title="App 2"><i class="bx bx-plus"></i></a>
+                  <a href="{{url_for('client_server')}}" data-gall=" portfolioDetailsGallery" data-vbtype="iframe"
+                    class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{{ url_for('static', filename='/assets/img/portfolio/Navitas.jpg') }}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Navitas Framework</h4>
+                <p>App</p>
+                <div class="portfolio-links">
+                  <a href="{{ url_for('static', filename='/assets/img/portfolio/Navitas.jpg') }}"
+                    data-gall="portfolioGallery" class="venobox" title="App 3"><i class="bx bx-plus"></i></a>
+                  <a href="{{url_for('navitas')}}" data-gall=" portfolioDetailsGallery" data-vbtype="iframe"
+                    class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Testimonials</h2>
+        </div>
+        <div class="testimonial-item">
+          <img src="{{ url_for('static', filename='/assets/img/testimonials/testimonials1.jpg') }}"
+            class="testimonial-img" alt="">
+          <h3>Stanislav Sartasov</h3>
+          <h4 style="color: #1d1d1d;">Assistant Professor &amp; Team Lead </h4>
+          <p>
+            <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+            In the course of the work, the student Miroshnikov Vladislav Igorevich actively
+            interacted with the supervisor, completed the tasks in a timely manner, showed independence, and promptly
+            eliminated the
+            identified comments to the work.
+            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+          </p>
+        </div>
+      </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+        </div>
+
+        <div class="row mt-1">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="icofont-google-map"></i>
+                <h4>Location:</h4>
+                <p>Saint Petersburg, Russia</p>
+              </div>
+
+              <div class="email">
+                <i class="icofont-envelope"></i>
+                <h4>Email:</h4>
+                <p>vladislaw.miroshnikov@gmail.com</p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3>Miroshnikov Vladislav</h3>
+      <div class="social-links">
+        <a href="https://vk.com/vladmirosh" class="vk"><i class="bx bxl-vk"></i></a>
+        <a href="https://t.me/vladosiker" class="telegram"><i class="bx bxl-telegram"></i></a>
+        <a href="https://github.com/vladislav-miroshnikov" class="github"><i class="bx bxl-github"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{{ url_for('static', filename='/assets/vendor/jquery/jquery.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='/assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='/assets/vendor/jquery.easing/jquery.easing.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='/assets/vendor/php-email-form/validate.js') }}"></script>
+  <script src="{{ url_for('static', filename='/assets/vendor/waypoints/jquery.waypoints.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='/assets/vendor/counterup/counterup.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='/assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='/assets/vendor/venobox/venobox.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='/assets/vendor/owl.carousel/owl.carousel.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='/assets/vendor/typed.js/typed.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='/assets/vendor/aos/aos.js') }}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{{ url_for('static', filename='/assets/js/main.js') }}"></script>
+
+</body>
+
+</html>
