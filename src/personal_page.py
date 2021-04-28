@@ -14,36 +14,36 @@ app.config['SECRET_KEY'] = '8c6e8548b98042456995b42d1165d63e943cdf85544254522240
 db = SQLAlchemy(app)
 
 
-# class Users(db.Model):
-#     id = db.Column(db.Integer, primary_key=True)
-#     name = db.Column(db.String(255), nullable=False)
-#     vk_id = db.Column(db.String(255), unique=True, nullable=True)
-#     vk_access_token = db.Column(db.String(255), nullable=True)
-#     timestamp = db.Column(db.DateTime, default=datetime.utcnow)
-
-#     def __repr__(self):
-#         return f'User: {self.name}\n' \
-#                f'ID: {self.id}\n' \
-#                f'VK ID: {self.vk_id}\n' \
-#                f'Posted time: {self.vk_access_token}\n' \
-#                f'Time: {self.timestamp}\n' \
-
-
-class Posts(db.Model):
+class Users(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(255), nullable=False)
-    question = db.Column(db.String(1023), nullable=False)
-    question_time = db.Column(db.DateTime, default=datetime.utcnow)
-    answer = db.Column(db.String(1023), nullable=True)
-    answer_time = db.Column(db.DateTime, nullable=True)
+    vk_id = db.Column(db.String(255), unique=True, nullable=True)
+    vk_access_token = db.Column(db.String(255), nullable=True)
+    timestamp = db.Column(db.DateTime, default=datetime.utcnow)
 
     def __repr__(self):
-        return f'Author: {self.name}\n' \
+        return f'User: {self.name}\n' \
                f'ID: {self.id}\n' \
-               f'Question: {self.question}\n' \
-               f'Posted time: {self.question_time}\n' \
-               f'Answer: {self.answer}\n' \
-               f'Posted time: {self.answer_time}\n'
+               f'VK ID: {self.vk_id}\n' \
+               f'Posted time: {self.vk_access_token}\n' \
+               f'Time: {self.timestamp}\n' \
+
+
+# class Posts(db.Model):
+#     id = db.Column(db.Integer, primary_key=True)
+#     name = db.Column(db.String(255), nullable=False)
+#     question = db.Column(db.String(1023), nullable=False)
+#     question_time = db.Column(db.DateTime, default=datetime.utcnow)
+#     answer = db.Column(db.String(1023), nullable=True)
+#     answer_time = db.Column(db.DateTime, nullable=True)
+
+#     def __repr__(self):
+#         return f'Author: {self.name}\n' \
+#                f'ID: {self.id}\n' \
+#                f'Question: {self.question}\n' \
+#                f'Posted time: {self.question_time}\n' \
+#                f'Answer: {self.answer}\n' \
+#                f'Posted time: {self.answer_time}\n'
 
 
 @app.route("/")
