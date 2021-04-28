@@ -28,11 +28,13 @@
   <link href="{{ url_for('static', filename='/assets/vendor/aos/aos.css') }}" rel="stylesheet">
 
   <link href="{{ url_for('static', filename='/assets/css/style.css') }}" rel="stylesheet">
-
+  <script src="https://vk.com/js/api/openapi.js?169" type="text/javascript"></script>
 </head>
 
 <body>
-
+  <script type="text/javascript">
+    VK.init({ apiId: 7840546, onlyWidgets: true });
+  </script>
   <!-- ======= Mobile nav toggle button ======= -->
   <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
 
@@ -505,15 +507,15 @@
             </div>
 
           </div>
+          {%block questions%} {%endblock%}
         </div>
     </section><!-- End Contact Section -->
-
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
-      <h3>Miroshnikov Vladislav</h3>
+      <h3 style="text-align: center">Miroshnikov Vladislav</h3>
       <div class="social-links">
         <a href="https://vk.com/vladmirosh" class="vk"><i class="bx bxl-vk"></i></a>
         <a href="https://t.me/vladosiker" class="telegram"><i class="bx bxl-telegram"></i></a>
