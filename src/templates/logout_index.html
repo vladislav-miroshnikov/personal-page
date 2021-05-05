@@ -1,11 +1,11 @@
 {% extends "index.html" %}
 {% block login %}
-<li><a href="{{url_for('logout')}}"><i class="bx bxl-vk"></i> <span>VK logout</span></a></li>
-
+<li><a href="#exampleModal" data-toggle="modal" data-target="#exampleModal"><i class="bx bxl-vk"></i> <span>VK
+            logout</span></a></li>
 {% endblock %}
 {% block questions %}
-<div class="col-lg-8 mt-5 mt-lg-0">
-
+<div align="center">
+    <h4 align="center">Hello, {{name}}. Ask me a question!</h4>
     <!-- <form action="" method="post" role="form" class="php-email-form">
         <div class="form-group">
             <textarea readonly="readonly" class="form-control" name="message" rows="20"">
@@ -22,10 +22,9 @@
         </div>
         <div class="text-center"><button type="submit">Send question</button></div>
     </form> -->
-    <div id="vk_comments"></div>
-    <script type="text/javascript">
-        VK.Widgets.Comments('vk_comments');
-    </script>
 </div>
-
+<div align="center" id="vk_comments"></div>
+<script type="text/javascript">
+    VK.Widgets.Comments('vk_comments');
+</script>
 {% endblock %}

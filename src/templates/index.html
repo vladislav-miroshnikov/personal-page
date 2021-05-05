@@ -32,6 +32,28 @@
 </head>
 
 <body>
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Confirmation of exit</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Are you sure you want to log out? We could chat some more :)
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <form action="{{url_for('logout')}}">
+            <button type="submit" class="btn btn-primary">Logout</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
   <script type="text/javascript">
     VK.init({ apiId: 7840546, onlyWidgets: true });
   </script>
@@ -48,6 +70,7 @@
         <li><a href="#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
         <li><a href="#portfolio"><i class="bx bx-book-content"></i> <span>Projects</span></a></li>
         <li><a href="#contact"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        <li><a href="#feedback"><i class="bx bx-question-mark"></i> <span>Feedback</span></a></li>
         {%block login%} {%endblock%}
       </ul>
     </nav><!-- .nav-menu -->
@@ -488,7 +511,7 @@
           <h2>Contact</h2>
         </div>
 
-        <div class="row mt-1">
+        <div class="row mt-1" style="margin:auto">
 
           <div class="col-lg-4">
             <div class="info">
@@ -507,22 +530,29 @@
             </div>
 
           </div>
-          {%block questions%} {%endblock%}
+
         </div>
     </section><!-- End Contact Section -->
+    <section id="feedback" class="feedback">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Feedback</h2>
+        </div>
+        {%block questions%} {%endblock%}
+    </section>
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer">
+  <footer style="text-align: center" id="footer">
     <div class="container">
-      <h3 style="text-align: center">Miroshnikov Vladislav</h3>
+      <!-- <h3>Miroshnikov Vladislav</h3>
       <div class="social-links">
         <a href="https://vk.com/vladmirosh" class="vk"><i class="bx bxl-vk"></i></a>
         <a href="https://t.me/vladosiker" class="telegram"><i class="bx bxl-telegram"></i></a>
         <a href="https://github.com/vladislav-miroshnikov" class="github"><i class="bx bxl-github"></i></a>
-      </div>
+      </div> -->
     </div>
-  </footer><!-- End Footer -->
+  </footer>
 
   <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
   <div id="preloader"></div>

@@ -50,7 +50,9 @@ class Users(db.Model):
 def main_page():
     if not session.get('user_id') is None:
         # posts = Posts.query.all()
-        return render_template("logout_index.html")
+        user_id = session.get('user_id')
+        user = Users.query.filter_by(id=user_id).first()
+        return render_template("logout_index.html", name=user.name)
     return render_template('login_index.html')
 
 
