@@ -1199,3 +1199,7 @@ section {
 #footer .credits {
   font-size: 13px;
 }
+
+.modal-open {
+    overflow: initial;
+}
